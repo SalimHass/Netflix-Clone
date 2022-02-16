@@ -33,13 +33,13 @@ const FavItemList = (props) => {
 
     return (
         <>
-        <CardGroup style={{ display: "flex" }}>
+        <CardGroup style={{ display: "flex" }} >
             {
                 
                 (props.favoriteList ?? []).map(movie => {
                     return (
-                        <Card key={movie.id}>
-                            <Card.Img variant="top" src={`https://image.tmdb.org/t/p/w300${movie.image}`} />
+                        <Card key={movie.id}  >
+                            <Card.Img  variant="top"  src={`https://image.tmdb.org/t/p/w300${movie.image}`} />
                             <Card.Body>
                                 <Card.Title>{movie.title}</Card.Title>
                                 <Card.Text>
