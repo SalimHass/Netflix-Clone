@@ -7,6 +7,7 @@ export default function ModalMovie({show, movie,handleClose }) {
     let showHideClassName= show ? "modal display-block" : "modal display-none"
     function addToFav() {
       movie.comment = comment
+      movie.image = movie.poster_path
       const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
